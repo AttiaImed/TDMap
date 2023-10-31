@@ -35,10 +35,10 @@ public class Main {
             System.out.println(societeHashMap.rechercherEmploye(e2));
             System.out.println(societeTreeMap.rechercherEmploye(e3));
 
-            System.out.println("les départements");
+            System.out.println("les départements de hashmap");
             societeHashMap.afficherLesDepartements();
 
-            System.out.println("les départements");
+            System.out.println("les départements de treemap");
             societeTreeMap.afficherLesDepartements();
 
             societeHashMap.afficherDepartement(e2);

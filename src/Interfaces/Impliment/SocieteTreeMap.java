@@ -60,7 +60,6 @@ public class SocieteTreeMap implements InterfaceSociete {
         return employesDepartements.containsValue(d);
     }
 
-    // Comparator pour trier les Employe par leur nom
     private class EmployeComparator implements java.util.Comparator<Employe> {
         @Override
         public int compare(Employe e1, Employe e2) {
