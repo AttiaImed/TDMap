@@ -1,25 +1,27 @@
 package entites;
 
+import java.util.Objects;
+
 public class Employe {
-    private String cin;
+    private int cin;
     private String matricule;
     private String nom;
     private String prenom;
 
     public Employe() {}
 
-    public Employe(String cin, String matricule, String nom, String prenom) {
+    public Employe(int cin, String matricule, String nom, String prenom) {
         this.cin = cin;
         this.matricule = matricule;
         this.nom = nom;
         this.prenom = prenom;
     }
 
-    public String getCin() {
+    public int getCin() {
         return cin;
     }
 
-    public void setCin(String cin) {
+    public void setCin(int cin) {
         this.cin = cin;
     }
 
@@ -61,6 +63,11 @@ public class Employe {
             return false;
         }
         Employe employe = (Employe) obj;
-        return cin.equals(employe.cin);
+        return cin == employe.cin && matricule.equals(employe.matricule) && nom.equals(employe.nom);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(cin);
     }
 }

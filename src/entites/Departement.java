@@ -1,4 +1,7 @@
 package entites;
+
+import java.util.Objects;
+
 public class Departement {
     private int identifiant;
     private String nom;
@@ -42,5 +45,6 @@ public class Departement {
         Departement departement = (Departement) obj;
         return identifiant == departement.identifiant;
     }
+
 }
 
